@@ -12,7 +12,7 @@ using Yummy.WebApi.Context;
 namespace Yummy.WebApi.Migrations
 {
     [DbContext(typeof(ApiContext))]
-    [Migration("20250513142550_mig1")]
+    [Migration("20250513145352_mig1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -200,9 +200,6 @@ namespace Yummy.WebApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"), 1L, 1);
 
-                    b.Property<int?>("CategoryId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -219,8 +216,6 @@ namespace Yummy.WebApi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProductId");
-
-                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -320,20 +315,6 @@ namespace Yummy.WebApi.Migrations
                     b.HasKey("TestimonialId");
 
                     b.ToTable("Testimonials");
-                });
-
-            modelBuilder.Entity("Yummy.WebApi.Entities.Product", b =>
-                {
-                    b.HasOne("Yummy.WebApi.Entities.Category", "Category")
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId");
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("Yummy.WebApi.Entities.Category", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }
