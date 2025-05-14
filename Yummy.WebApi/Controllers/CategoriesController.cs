@@ -7,11 +7,11 @@ namespace Yummy.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Categories : ControllerBase
+    public class CategoriesController : ControllerBase
     {
         private readonly ApiContext _context;
 
-        public Categories(ApiContext context)
+        public CategoriesController(ApiContext context)
         {
             _context = context;
         }
