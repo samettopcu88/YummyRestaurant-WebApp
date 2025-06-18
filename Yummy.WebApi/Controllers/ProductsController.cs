@@ -1,7 +1,9 @@
-﻿using AutoMapper;
+﻿using ApiProjeKampi.WebApi.Dtos.ProductDtos;
+using AutoMapper;
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Yummy.WebApi.Context;
 using Yummy.WebApi.Entities;
 
@@ -74,6 +76,22 @@ namespace Yummy.WebApi.Controllers
                 _context.SaveChanges();
                 return Ok("Ürün güncelleme işlemi başarılı");
             }
+        }
+
+        [HttpPost("CreateProductWithCategory")]
+        public IActionResult CreateProductWithCategory(CreateProductDto createProductDto)
+        {
+            var value = _mapper.Map<Product>(createProductDto);
+            _context.Products.Add(value);
+            _context.SaveChanges();
+            return Ok("Ekleme işlemi başarılı");
+        }
+
+        [HttpGet("ProductListWithCategory")]
+        public IActionResult ProductListWithCategory()
+        {
+            var value = _context.Products.Include(x => x.Category).ToList();
+            return Ok(_mapper.Map<List<ResultProductWithCategoryDto>>(value));
         }
     }
 }
