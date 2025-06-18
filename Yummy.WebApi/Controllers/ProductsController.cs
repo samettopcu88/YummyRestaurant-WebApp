@@ -1,4 +1,4 @@
-﻿using ApiProjeKampi.WebApi.Dtos.ProductDtos;
+﻿using Yummy.WebApi.Dtos.ProductDtos;
 using AutoMapper;
 using FluentValidation;
 using Microsoft.AspNetCore.Http;

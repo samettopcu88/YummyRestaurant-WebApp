@@ -1,4 +1,4 @@
-﻿using ApiProjeKampi.WebApi.Dtos.ProductDtos;
+﻿using Yummy.WebApi.Dtos.ProductDtos;
 using AutoMapper;
 using Yummy.WebApi.Dtos.FeatureDtos;
 using Yummy.WebApi.Dtos.MessageDtos;

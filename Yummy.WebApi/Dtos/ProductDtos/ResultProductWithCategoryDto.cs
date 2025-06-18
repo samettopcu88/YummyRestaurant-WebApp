@@ -1,6 +1,6 @@
-﻿using ApiProjeKampi.WebApi.Entities;
+﻿using Yummy.WebApi.Entities;
 
-namespace ApiProjeKampi.WebApi.Dtos.ProductDtos
+namespace Yummy.WebApi.Dtos.ProductDtos
 {
     public class ResultProductWithCategoryDto
     {

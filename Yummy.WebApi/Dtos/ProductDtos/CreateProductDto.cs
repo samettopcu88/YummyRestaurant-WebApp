@@ -1,4 +1,4 @@
-﻿namespace ApiProjeKampi.WebApi.Dtos.ProductDtos
+﻿namespace Yummy.WebApi.Dtos.ProductDtos
 {
     public class CreateProductDto
     {
