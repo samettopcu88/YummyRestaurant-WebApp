@@ -1,0 +1,62 @@
+﻿[
+  {
+    "nameSurname": "Lara Aydın",
+    "title": "Gastronomy Expert",
+    "comment": "The presentations were fantastic, and the flavors were truly like a work of art. The chef’s effort is truly admirable.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Deniz Arslan",
+    "title": "Food Blogger",
+    "comment": "Everything from the desserts to the main courses was flawless. The lamb tandır, in particular, was unforgettable!",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Selin Kara",
+    "title": "Customer",
+    "comment": "I really liked the ambiance. It was one of the most enjoyable evenings I've had with my family.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Emre Güven",
+    "title": "Flavor Critic",
+    "comment": "The menu selection was very well-balanced. The seafood was fresh and masterfully prepared.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Buse Tan",
+    "title": "Influencer",
+    "comment": "The visual presentations were absolutely Instagram-worthy! A perfect blend of taste and aesthetics.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Can Erdem",
+    "title": "Food Photographer",
+    "comment": "I couldn't stop taking photos! Alongside the elegant presentations, the atmosphere was warm and inviting.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "İlayda Şimşek",
+    "title": "Visitor",
+    "comment": "Excellent in terms of value for money. The lunch menus, in particular, are a great deal.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Tolga Yaman",
+    "title": "Corporate Client",
+    "comment": "An ideal venue for business meals. Quiet, upscale, and the service is impressively fast.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Ece Soylu",
+    "title": "Nutritionist",
+    "comment": "I loved that there were vegetarian and healthy options. No compromise on flavor whatsoever.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Kerem Başar",
+    "title": "Food Writer",
+    "comment": "Classic flavors were given a modern twist. The originality of the menu really stood out.",
+    "imageUrl": "test"
+  }
+]
