@@ -1,4 +1,6 @@
-﻿<section id="why-us" class="why-us section light-background">
+﻿@model List<Yummy.WebUI.Dtos.ServiceDtos.ResultServiceDto>
+
+<section id="why-us" class="why-us section light-background">
 
     <div class="container">
 
@@ -14,40 +16,23 @@
                         <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
                     </div>
                 </div>
-            </div><!-- End Why Box -->
+            </div>
 
             <div class="col-lg-8 d-flex align-items-stretch">
                 <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-xl-4">
-                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                            <i class="bi bi-clipboard-data"></i>
-                            <h4>Where Flavor Comes to Life</h4>
-                            <p>All our dishes are prepared by expert chefs using natural and additive-free ingredients</p>
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-xl-4">
+                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                <i class="@item.IconUrl"></i>
+                                <h4>@item.Title</h4>
+                                <p>@item.Description</p>
+                            </div>
                         </div>
-                    </div><!-- End Icon Box -->
-
-                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                            <i class="bi bi-gem"></i>
-                            <h4>Our Commitment to Freshness</h4>
-                            <p>With ingredients sourced fresh daily, your health and taste preferences are always our priority</p>
-                        </div>
-                    </div><!-- End Icon Box -->
-
-                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                            <i class="bi bi-inboxes"></i>
-                            <h4>A Friendly Approach to Service</h4>
-                            <p>Our priority is to always provide service that leaves our guests satisfied</p>
-                        </div>
-                    </div><!-- End Icon Box -->
-
+                    }
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </section>
