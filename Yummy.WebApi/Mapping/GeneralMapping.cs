@@ -6,6 +6,7 @@ using Yummy.WebApi.Dtos.MessageDtos;
 using Yummy.WebApi.Dtos.NotificationDtos;
 using Yummy.WebApi.Dtos.ProductDtos;
 using Yummy.WebApi.Entities;
+using Yummy.WebUI.Dtos.ReservationDtos;
 
 namespace Yummy.WebApi.Mapping
 {
@@ -38,6 +39,11 @@ namespace Yummy.WebApi.Mapping
             CreateMap<About, CreateAboutDto>().ReverseMap();
             CreateMap<About, GetAboutByIdDto>().ReverseMap();
             CreateMap<About, UpdateAboutDto>().ReverseMap();
+
+            CreateMap<Reservation, ResultReservationDto>().ReverseMap();
+            CreateMap<Reservation, CreateReservationDto>().ReverseMap();
+            CreateMap<Reservation, UpdateReservationDto>().ReverseMap();
+            CreateMap<Reservation, GetReservationByIdDto>().ReverseMap();
         }
     }
 }
