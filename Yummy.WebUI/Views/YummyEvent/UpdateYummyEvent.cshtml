@@ -1,0 +1,38 @@
+﻿@model GetYummyEventByIdDto
+
+@{
+    ViewData["Title"] = "UpdateYummyEvent";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="section">
+    <div class="section-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Event Update Page</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <input type="hidden" asp-for="YummyEventId" />
+                            <label>Event Title</label>
+                            <input type="text" asp-for="Title" class="form-control" />
+                            <br />
+                            <label>Event Description</label>
+                            <input type="text" asp-for="Description" class="form-control" />
+                            <br />
+                            <label>Event Price</label>
+                            <input type="text" asp-for="Price" class="form-control" />
+                            <br />
+                            <label>Event Image URL</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control" />
+                            <br />
+                            <button class="btn btn-success">Update Event</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
